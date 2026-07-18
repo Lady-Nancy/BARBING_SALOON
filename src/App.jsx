@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import Services from './Components/Services'
 import Lookbook from './Components/Lookbook'
