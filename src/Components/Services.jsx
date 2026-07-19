@@ -82,7 +82,7 @@ const Services = () => {
                     <span className="price-label">ESTIMATED</span>
                     <span className="price-value">{service.price}</span>
                   </div>
-                  <a href="/booking" className="card-book-btn">
+                  <a href="/booknow" className="card-book-btn">
                     <span>BOOK</span>
                   </a>
                 </div>
@@ -91,7 +91,7 @@ const Services = () => {
           ))}
         </div>
 
-        {/* Bottom Notice */}
+       
         <p className="services-footer-note">
           *All hair services include a complimentary wash and premium styling consult.
         </p>

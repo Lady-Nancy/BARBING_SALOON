@@ -97,7 +97,7 @@ const Lookbook = () => {
                   <span className="style-artist">{item.artist}</span>
                   <h4 className="style-title">{item.title}</h4>
                   <div className="style-divider"></div>
-                  <a href="/booking" className="style-action-btn">BOOK THIS LOOK</a>
+                  <a href="/booknow" className="style-action-btn">BOOK THIS LOOK</a>
                 </div>
               </div>
             </div>
