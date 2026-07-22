@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../Styles/Lookbook.css';
+import { Link } from 'react-router-dom';
 
 const Lookbook = () => {
   const [filter, setFilter] = useState('all');
@@ -7,28 +8,28 @@ const Lookbook = () => {
   const galleryItems = [
     {
       id: 1,
-      category: 'girls',
+      category: 'trim/tatoo',
       title: 'Sleek Textured Pixie',
       artist: 'By Sarah',
-      imgUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKLV-WZxJ9huQti2cGfZ7W_IuDgQmd5eWh2VM9NwpXJunsvZfrN87-SKY&s=10'
+      imgUrl: 'https://www.barberstake.com/wp-content/uploads/2025/03/Edgy-Freestyle-From-Sides-To-Back.jpg'
     },
     {
       id: 2,
-      category: 'boys',
+      category: 'cuts',
       title: 'Mid Skin Fade & Crop',
       artist: 'By Alex',
       imgUrl: 'https://i.pinimg.com/474x/9f/81/b8/9f81b859a37b29aeffb49381c6431ccd.jpg'
     },
     {
       id: 3,
-      category: 'girls',
+      category: 'trim/tatoo',
       title: 'Sharp Undercut Bob',
       artist: 'By Sarah',
-      imgUrl: 'https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?q=80&w=600&auto=format&fit=crop'
+      imgUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzNyi8HCGDxSkU6xcQNgZyesTMidCayGb-sTxK7UZTDNDcfQHQfQG7c737&s=10'
     },
     {
       id: 4,
-      category: 'boys',
+      category: 'cuts',
       title: 'Classic Pompadour Taper',
       artist: 'By Marcus',
       imgUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn0gKBqtYJz4QM44eyfI-4wx-XMCAc2D72eurgS4gLXkUmiE3_7RmqntaG&s=10'
@@ -71,7 +72,7 @@ const Lookbook = () => {
 
        
         <div className="lookbook-filters">
-          {['all', 'boys', 'girls', 'designs'].map((cat) => (
+          {['all', 'cuts', 'trim/tatoo', 'designs'].map((cat) => (
             <button
               key={cat}
               className={`filter-btn ${filter === cat ? 'active' : ''}`}
@@ -97,7 +98,7 @@ const Lookbook = () => {
                   <span className="style-artist">{item.artist}</span>
                   <h4 className="style-title">{item.title}</h4>
                   <div className="style-divider"></div>
-                  <a href="/booknow" className="style-action-btn">BOOK THIS LOOK</a>
+                  <Link to="/booknow" className="style-action-btn">BOOK THIS LOOK</Link>
                 </div>
               </div>
             </div>

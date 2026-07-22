@@ -8,6 +8,7 @@ import AboutUs from './Components/AboutUs'
 import Reviews from './Components/Reviews'
 import FAQ from './Components/FAQ'
 import BookNow from './Components/BookNow'
+import Footer from './Components/Footer'
 import './App.css';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Reviews />
           <FAQ />
           <BookNow />
+          <Footer />
           </>
           }/>
 
@@ -35,8 +37,11 @@ function App() {
           <Route path="/booknow" element={<BookNow />} />
          
         </Routes>
+      
       </div>
     </Router>
+
+    
   );
 }
 

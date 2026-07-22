@@ -16,7 +16,7 @@ const AboutUs = () => {
               <div className="main-frame-glow"></div>
               <div className="about-image-wrapper primary-frame">
                 <img 
-                  src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=800&auto=format&fit=crop" 
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKEwmk3judGOD0gHVt2MOJKy6q5pXv-dHJGAgBIYYjKZwa-Xk3W8T7Dyk4&s=10" 
                   alt="Barber grooming client" 
                   className="about-img"
                 />

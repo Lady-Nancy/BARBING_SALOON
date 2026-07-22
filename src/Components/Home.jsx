@@ -22,14 +22,14 @@ const Home = () => {
       <div className="hero-grid">
        
         <div className="hero-content">
-          <span className="hero-badge">THE UNISEX REVOLUTION</span>
+          <span className="hero-badge">THE MODERN ERA OF GROOMING</span>
           <h1 className="hero-title">
             SHARP LINES.<br />
             <span className="gradient-text">BOLD STYLES.</span><br />
             NO LABELS.
           </h1>
           <p className="hero-subtitle">
-            A premium, high-contrast barbing experience crafted carefully for both girls and boys. Where raw barber precision meets high-fashion styling.
+            A premium, high-contrast barbing experience crafted carefully for all. Where raw barber precision meets high-fashion styling.
           </p>
           <div className="hero-actions">
             <a href="/booknow" className="btn-primary">

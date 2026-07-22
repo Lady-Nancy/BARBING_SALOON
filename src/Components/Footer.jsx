@@ -1,15 +1,21 @@
 import React from 'react';
-import './Footer.css';
+import '../Styles/Footer.css';
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <footer className="footer">
       <div className="footer-container">
         
-        
         <div className="footer-column brand-col">
           <a href="#home" className="footer-logo">
-            UNISEX<span className="logo-accent">CUTS</span>
+            UNA MEN'S <span className="logo-accent">BARBER</span>
           </a>
           <p className="footer-tagline">
             Sharp lines, bold textures, no labels. Re-engineering the premium barbing and hair-styling experience for both girls and boys.
@@ -21,7 +27,6 @@ const Footer = () => {
           </div>
         </div>
 
-       
         <div className="footer-column links-col">
           <h4 className="footer-heading">NAVIGATION</h4>
           <ul className="footer-links-list">
@@ -32,7 +37,6 @@ const Footer = () => {
           </ul>
         </div>
 
-       
         <div className="footer-column hours-col">
           <h4 className="footer-heading">THE SCHEDULE</h4>
           <ul className="hours-list">
@@ -53,15 +57,27 @@ const Footer = () => {
 
       </div>
 
-     
       <div className="footer-bottom">
         <div className="bottom-wrapper">
           <p className="copyright-text">
-            &copy; {new Date().getFullYear()} UNISEXCUTS. ALL RIGHTS RESERVED.
+            &copy; {new Date().getFullYear()} UNA MEN'S. ALL RIGHTS RESERVED.
           </p>
-          <p className="designer-signature">
-            CRAFTED BY <span className="sig-highlight">ANSELM NANCY</span>
-          </p>
+          
+
+          <div className="credit-and-scroll">
+            <p className="designer-signature">
+              CRAFTED BY <span className="sig-highlight">UNA MEN'S BARBER</span>
+            </p>
+            <button 
+              type="button" 
+              className="scroll-top-symbol-btn" 
+              onClick={scrollToTop} 
+              aria-label="Scroll to top"
+              title="Scroll to top"
+            >
+              &#8593;
+            </button>
+          </div>
         </div>
       </div>
     </footer>

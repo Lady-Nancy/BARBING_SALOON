@@ -21,7 +21,6 @@
   overflow: hidden;
 }
 
-
 .reviews-glow-left {
   position: absolute;
   top: 20%;
@@ -51,7 +50,6 @@
   margin: 0 auto;
   z-index: 3;
 }
-
 
 .reviews-header {
   text-align: center;
@@ -88,15 +86,34 @@
 }
 
 
-.reviews-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+.reviews-carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.reviews-slider {
+  display: flex;
   gap: 32px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  padding: 20px 10px;
+ 
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+}
+
+.reviews-slider::-webkit-scrollbar {
+  display: none; 
 }
 
 
 .review-card {
   position: relative;
+  flex: 0 0 calc(33.333% - 22px); 
+  min-width: 320px;
+  scroll-snap-align: start;
   background: var(--glass-panel);
   backdrop-filter: blur(25px);
   border: 1px solid var(--panel-border);
@@ -107,6 +124,7 @@
   justify-content: space-between;
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
   transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  box-sizing: border-box;
 }
 
 .card-top-row {
@@ -166,7 +184,6 @@
   letter-spacing: 1px;
 }
 
-
 .card-border-glow {
   position: absolute;
   top: 0;
@@ -180,7 +197,6 @@
   z-index: -1;
 }
 
-
 .review-card:hover {
   transform: translateY(-8px);
   border-color: rgba(212, 175, 55, 0.2);
@@ -191,6 +207,48 @@
   box-shadow: 0 0 30px rgba(212, 163, 179, 0.03);
 }
 
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: var(--glass-panel);
+  border: 1px solid var(--panel-border);
+  color: var(--white);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(20px);
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.scroll-btn:hover {
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+  background: rgba(20, 20, 26, 0.9);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+}
+
+.prev-btn {
+  left: -25px;
+}
+
+.next-btn {
+  right: -25px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .review-card {
+    flex: 0 0 calc(50% - 16px); 
+  }
+}
 
 @media screen and (max-width: 768px) {
   .reviews-section {
@@ -203,6 +261,20 @@
   }
   
   .review-card {
+    flex: 0 0 100%; 
     padding: 32px;
+  }
+
+  .scroll-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .prev-btn {
+    left: -10px;
+  }
+
+  .next-btn {
+    right: -10px;
   }
 }

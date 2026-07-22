@@ -372,6 +372,138 @@
 }
 
 
+
+.booking-modal-overlay {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  background: rgba(5, 5, 6, 0.85) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  z-index: 99999 !important; 
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.booking-modal-card {
+  position: relative !important;
+  z-index: 100000 !important;
+  background: var(--matte-black) !important; 
+  border: 1px solid var(--brand-rose) !important;
+  border-radius: 16px !important;
+  padding: 40px 30px !important;
+  max-width: 440px !important;
+  width: 100% !important;
+  min-height: auto !important;
+  text-align: center !important;
+  color: var(--pure-white) !important;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9), 0 0 30px rgba(212, 163, 179, 0.15) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.modal-icon-ring {
+  width: 64px;
+  height: 64px;
+  border: 2px solid var(--brand-gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
+}
+
+.modal-icon {
+  font-size: 1.5rem;
+  color: var(--brand-gold);
+}
+
+.modal-title {
+  color: var(--pure-white) !important;
+  font-size: 1.4rem !important;
+  font-weight: 900 !important;
+  letter-spacing: 2px !important;
+  margin: 0 0 10px 0 !important;
+}
+
+.modal-divider {
+  width: 40px;
+  height: 2px;
+  background-color: var(--brand-rose);
+  margin: 0 auto 16px auto;
+}
+
+.modal-body-text {
+  color: var(--dim-gray) !important;
+  font-size: 0.95rem !important;
+  line-height: 1.5 !important;
+  margin: 0 0 20px 0 !important;
+}
+
+.modal-body-text strong {
+  color: var(--pure-white) !important;
+}
+
+.modal-details-box {
+  width: 100%;
+  background: var(--glass-dark);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+.modal-detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--dim-gray);
+}
+
+.modal-detail-row span:last-child {
+  color: var(--pure-white);
+  font-weight: 600;
+}
+
+.modal-detail-row .detail-highlight {
+  color: var(--brand-rose);
+  font-weight: 700;
+}
+
+.modal-close-btn {
+  width: 100%;
+  background: transparent;
+  border: 1px solid var(--brand-gold);
+  color: var(--brand-gold);
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 14px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.modal-close-btn:hover {
+  background: var(--brand-gold);
+  color: var(--matte-black);
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.25);
+}
+
 @keyframes slideFormUp {
   from { opacity: 0; transform: translateY(40px); }
   to { opacity: 1; transform: translateY(0); }

@@ -18,7 +18,7 @@ const Navbar = () => {
       <div className="nav-container">
         
         <a href="#home" className="nav-logo" onClick={closeMenu}>
-          UNISEX<span className="accent-text">CUTS</span>
+          UNA MEN'S <span className="accent-text">BARBER</span>
         </a>
 
         

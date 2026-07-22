@@ -199,6 +199,45 @@
 }
 
 
+.bottom-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+
+.credit-and-scroll {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+
+.scroll-top-symbol-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.scroll-top-symbol-btn:hover {
+  background: #fff;
+  color: #000;
+  border-color: #fff;
+  transform: translateY(-2px);
+}
+
+
 @media screen and (max-width: 968px) {
   .footer-container {
     grid-template-columns: 1fr 1fr;
