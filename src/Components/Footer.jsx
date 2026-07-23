@@ -27,16 +27,19 @@ const Footer = () => {
           </div>
         </div>
 
+        
         <div className="footer-column links-col">
           <h4 className="footer-heading">NAVIGATION</h4>
           <ul className="footer-links-list">
             <li><a href="#home" className="f-link">HOME</a></li>
             <li><a href="#services" className="f-link">SERVICES</a></li>
+            <li><a href="#shop" className="f-link">SHOP</a></li>
             <li><a href="#lookbook" className="f-link">LOOKBOOK</a></li>
             <li><a href="#about" className="f-link">ABOUT US</a></li>
           </ul>
         </div>
 
+     
         <div className="footer-column hours-col">
           <h4 className="footer-heading">THE SCHEDULE</h4>
           <ul className="hours-list">
@@ -55,6 +58,24 @@ const Footer = () => {
           </ul>
         </div>
 
+        
+        <div className="footer-column location-col">
+          <h4 className="footer-heading">LOCATION</h4>
+          <address className="footer-address">
+            6 South Terrace,<br />
+            Fremantle WA 6160,<br />
+            Australia
+          </address>
+          <a 
+            href="https://maps.google.com/?q=6+South+Terrace,+Fremantle+WA+6160,+Australia" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="directions-link"
+          >
+            GET DIRECTIONS &rarr;
+          </a>
+        </div>
+
       </div>
 
       <div className="footer-bottom">
@@ -62,7 +83,6 @@ const Footer = () => {
           <p className="copyright-text">
             &copy; {new Date().getFullYear()} UNA MEN'S. ALL RIGHTS RESERVED.
           </p>
-          
 
           <div className="credit-and-scroll">
             <p className="designer-signature">

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../Styles/Home.css';
 
 const Home = () => {
@@ -32,12 +33,12 @@ const Home = () => {
             A premium, high-contrast barbing experience crafted carefully for all. Where raw barber precision meets high-fashion styling.
           </p>
           <div className="hero-actions">
-            <a href="/booknow" className="btn-primary">
+            <Link to="/booknow" className="btn-primary">
               <span>BOOK AN APPOINTMENT</span>
-            </a>
-            <a href="/lookbook" className="btn-secondary">
+            </Link>
+            <Link to="/lookbook" className="btn-secondary">
               EXPLORE LOOKS
-            </a>
+            </Link>
           </div>
         </div>
 
